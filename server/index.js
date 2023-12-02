@@ -100,4 +100,8 @@ app.get('/api/users/logout', auth, (req, res) => {
 
 // Router <- Express에서 제공되는 것을 이용해 이후 정리 예정.
 
+app.get('/api/hello', (req, res) => {
+  res.send("안녕하세요~")
+})
+
 app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`));
